@@ -46,6 +46,23 @@ View the tutoral here: [Create Your First AWS Lambda Function](https://www.youtu
     - acknowledge that using the same S3 bucket for input as output will cause an infinate loop and cause the cost implication of this
     - click Add
 
+In this example, as soon as a file is uploaded to the S3 bucket, the lambda function is triggered. we can see this activity in the dashboard as follows:
+  
+  - in the funciton, click Monitor. THis takes you to the activity dashboard.
+  - View CloudWatch logs - here you can view the output from the example function.
+    - click the Log stream to dig into the detail.
+
+  ### NOTE: After the example has completed it is advised to delete the function and the S3 bucket so that it doesnt accidentally get triggered (in future) and charge you.
+  - Function
+    - click on Functions (to view all of your functions)
+    - select the fucntion (tick box)
+    - under actions click delete and confirm deletion
+  - S3 Bucket
+    - click on Buckets
+    - select the bucket
+    - click delete. (you may get an error saying that your bucket needs to be empty
+      - click Empty Bucket (and permanently delete)
+
 
 ### Tech Stack/Dependencies:
 
